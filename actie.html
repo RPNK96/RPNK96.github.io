@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         .block {
+             width: 200px;
+             height: 200px;
+             color: white;
+             background-color: seagreen;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             white-space: nowrap;
+             position: relative;
+         }
+         .block::before {
+             content:none;
+             position: absolute;
+             width: 90%;
+             height: 5px;
+             background-color: lightcoral;
+             top: 10%;
+         }
+         .block::after {
+             content:none;
+             position: absolute;
+             width: 90%;
+             height: 5px;
+             background-color: lightseagreen;
+             bottom: 10%;
+         }
+         .popup {
+             display: inline-block;
+             font-size: 2.25em;
+             padding: 1em;
+             color: lightseagreen;
+             position: relative;
+             border-radius: 5px;
+             background-color: lime;
+         }
+         .popup:hover::after {
+             content: "Всплывающее окно";
+             position: absolute;
+             padding: 1em;
+             top: 50%;
+             left: 25%;
+             border-radius: 5px;
+             white-space: nowrap;
+             background-color: maroon;
+             color: purple;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="block">текст</div>
+     <div class="popup">жд</div>
+ </body>
+ </html>
