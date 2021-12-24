@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>с хэппи нью э</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(17, 17, 17);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .tree {
+            position: absolute;
+            bottom: 30%;
+            left: 45%;
+        }
+        .field {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        .card {
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            font-family: rum;
+            z-index: 9999;
+        }
+        @font-face {
+            font-family: rum;
+            src: url("rum.otf") format("opentype");
+        }
+        h1 {
+            color: blanchedalmond;
+            font-size: 3em;
+        }
+        p ~ div {
+            color: blanchedalmond;
+            font-size: 1.5em;
+        }
+        .snowflake {
+            background-image: url(snowflake.png);
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: -50px;
+        }
+        @keyframes falling {
+            to {
+                top: 100vh;
+                transform: rotate(720deg);
+            }
+        }
+        .snowflake:nth-child(1) {
+            left: 9vw;
+            animation: falling 12s .2s linear infinite;
+        }
+        .snowflake:nth-child(2) {
+            left: 18vw;
+            animation: falling 14s .4s linear infinite;
+        }
+        .snowflake:nth-child(3) {
+            left: 25vw;
+            animation: falling 18.5s .9s linear infinite;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <img src="tree.png" alt="новогодняя елка" class="tree" width="400">
+    <img src="field.png" alt="зимнее поле" class="field">
+    <div class="card">
+        <h1>с новым летом!</h1>
+        <p class="text"></p>
+    </div>
+    
+</body>
+</html>
