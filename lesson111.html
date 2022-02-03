@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: greenyellow;
+            
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+
+        @keyframes fly {
+            0% {
+                top: 50%;
+                left: -25%;
+            }
+
+            25% {
+                top: 40%;
+            }
+
+            50% {
+                top: 55%;
+            }
+
+            75% {
+                top: 35%;
+            }
+
+            100% {
+                left: 100%;
+                top: 50%;
+            }
+        }
+
+        .div:nth-child(1) {
+
+            animation: fly 8s 3.75s ease-in-out infinite;
+        }
+
+        .div:nth-child(2) {
+
+            animation: fly 16s 4.75 ease-in-out infinite;
+        }
+
+        .div:nth-child(3) {
+
+            animation: fly 24s 5.75s ease-in-out infinite;
+        }
+
+        .div:nth-child(4) {
+
+            animation: fly 28s 6.75 ease-in-out infinite;
+        }
+
+
+        div {
+            color: indigo;
+            
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+</body>
+
+</html>
