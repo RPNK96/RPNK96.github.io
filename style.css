@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container {
+    display: flex;
+}
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.vh100 {
+    height: 100vh;
+}
+.flex-around {
+    justify-content: space-around;
+    align-items: center;
+}
