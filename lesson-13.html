@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .bgimg {
+        .bgimg-1 {
             background-image: url('https://raferalston.github.io/img/night.jpg');
             height: 100vh;
             background-repeat: no-repeat;
@@ -16,9 +16,22 @@
             background-size: cover;
             min-height: 500px;
         }
+
+        .bgimg-2 {
+            background-image: url('https://raferalston.github.io/img/night.jpg');
+            height: 100vh;
+            background-repeat: no-repeat;
+            opacity: 0.95;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            min-height: 500px;
+        }
+
         body {
             margin: 0;
         }
+
         div p {
             padding: 0.75em 1em;
             margin: 0;
@@ -28,15 +41,85 @@
             font-size: 2.25em;
             text-align: center;
         }
+
+        @keyframes falling {
+            to {
+                top: 100vh;
+                transform: rotate(720deg);
+            }
+        }
+
+        .star:nth-child(1) {
+            left: 9vw;
+            animation: falling 12s .2s linear infinite;
+        }
+
+        .star:nth-child(2) {
+            left: 18vw;
+            animation: falling 14s .4s linear infinite;
+        }
+
+        .star:nth-child(3) {
+            left: 27vw;
+            animation: falling 18.5s .9s linear infinite;
+        }
+        .star:nth-child(4) {
+            left: 36vw;
+            animation: falling 12s .2s linear infinite;
+        }
+
+        .star:nth-child(5) {
+            left: 45vw;
+            animation: falling 14s .4s linear infinite;
+        }
+
+        .star:nth-child(6) {
+            left: 54vw;
+            animation: falling 18.5s .9s linear infinite;
+        } .star:nth-child(7) {
+            left: 63vw;
+            animation: falling 12s .2s linear infinite;
+        }
+
+        .star:nth-child(8) {
+            left: 72vw;
+            animation: falling 14s .4s linear infinite;
+        }
+
+        .star:nth-child(9) {
+            left: 81vw;
+            animation: falling 18.5s .9s linear infinite;
+        }
+        .star {
+            background-image: url(https://clipart-best.com/img/sun/sun-clip-art-11.png);
+            background-size: cover;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top: -50px;
+        }
     </style>
 </head>
 <body>
-    <div class="bgimg">
+    </div>
+    <div class="bgimg-1">
         <div class="caption">
         </div>
     </div>
-    <div>
-        <p>..........................</p>
-    </div>
+    <div class="bgimg-2">
+        <div class="caption">
+        </div>
+        <div>
+            <p>..........................</p>
+        </div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div clas="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div clas="star"></div>
 </body>
 </html>
