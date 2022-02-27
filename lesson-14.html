@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left {
+            background-color: #52437B;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+            height: 15%;
+            width: 30%;
+            
+            position: absolute;
+           
+        }
+
+        .main {
+            background-color: #FF7A8A;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 15%;
+            width: 40%;
+            right: 30%;
+            position: absolute;
+        }
+       
+
+        .right {
+            background-color: #FCF594;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 15%;
+            width: 30%;
+            right: 1%;
+            position: absolute;
+        }
+        @media (max-width: 1500px) {
+            .left > .main > .right {
+                height: auto;
+            }
+        @media (max-width: 1200px) {
+            .left > .main > .right {
+                font-size: 5em;
+            }
+        }
+        @media (max-width: 992px) {
+            .left > .main > .right {
+                font-size: 4em;
+            }
+        }
+        @media (max-width: 768px) {
+            .left > .main > .right {
+                flex-flow: row wrap;
+                font-size: 2.5em;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        Левый элемент
+    </div>
+
+    <div class="main">
+        Главный элемент
+    </div>
+
+    <div class="right">
+        Правый элемент
+    </div>
+</body>
+
+</html>
