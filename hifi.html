@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       let weather = prompt('укажите текущую погоду')
+       let temp = prompt('укажите текущую температуру')
+       if (weather == 'солнечно') {
+           console.log('зонт не нужен')
+       } else if (weather == 'пасмурно' && temp >=0){
+           console.log('зонт нужен')
+       } else if (weather == 'пасмурно' && temp < 0){
+        console.log('зонт нужен, ожидается снегопад')
+       }
+   </script>
+   <script>
+       let scorost = prompt('введите скорость автомобиля')
+       let rasstoynie = prompt('введите расстояние между двух точек А и Б')
+       if (rasstoynie <=100 && scorost >= 100 ){
+           console.log('доберется быстро')
+       } else if (rasstoynie >100 && scorost <100){
+           console.log('доберется медленно')
+       } else 
+   </script>
+</body>
+</html>
